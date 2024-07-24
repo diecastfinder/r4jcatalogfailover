@@ -15,6 +15,6 @@ public class CatalogHandler {
             .contentType(MediaType.APPLICATION_JSON)
             .body(Mono.just(List.of(CatalogModelDto.builder()
                 .uri("failover.stub.rerun.catalog.service")
-                .build())), CatalogModelDto.class);
+                .build())), List.class);
     }
 }
